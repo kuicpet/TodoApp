@@ -7,11 +7,11 @@ const PORT = 4000;
 
 const app = express();
 
-mongoose.connect("mongodb://localhost:27017/todos",{ useNewUrlParser:true},)
+mongoose.connect("mongodb+srv://todo:aMQdEa2obIvmuUok@cluster0-x8poy.mongodb.net/test?retryWrites=true&w=majority",{ useNewUrlParser:true},)
 .then(()=>{
-    console.log("Successfully connected to Mongodb LocalServer");
+    console.log("Successfully connected to Mongodb Atlas");
 }).catch((error)=>{
-    console.log("Unable to connect to Mongodb LocalServer");
+    console.log("Unable to connect to Mongodb Atlas");
     console.log(error);
 });
 
