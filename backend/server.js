@@ -15,7 +15,7 @@ mongoose.connect("mongodb+srv://todo:aMQdEa2obIvmuUok@cluster0-x8poy.mongodb.net
     console.log(error);
 });
 
-app.use(express.json()); //Make sure it comes back as json
+app.use(express.json()); //Make sure it comes back as json.
 app.use(cors()); //Handling CORS errors
 app.use(bodyParser.json()); 
 app.use(bodyParser.urlencoded({extended: false}));

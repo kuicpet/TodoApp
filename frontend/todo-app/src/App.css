@@ -2,8 +2,8 @@
 .container {
   text-align: center;
 }
-p{
-  color: white;
+.completed00{
+  text-decoration: line-through;
 }
 .App-logo {
   height: 40vmin;
